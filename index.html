@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trixie's Birthday Celebration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="header-content">
+        <div class="logo">Trixie's Birthday</div>
+        <nav class="main-nav">
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#wishes" class="nav-link">Wishes</a>
+          <a href="#memories" class="nav-link">Memories</a>
+          <a href="#message" class="nav-link">Message</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="profile-container">
+            <div class="profile-circle">
+              <img src="profile.jpg" alt="Jane's Portrait" class="profile-image">
+            </div>
+            <h1 class="profile-name">Trixie</h1>
+          </div>
+          <div class="hero-text">
+            <p class="celebration-text">Happy Birthday!</p>
+            <p class="intro-text">
+              Today we celebrate Trixie's birthday! A wonderful person who brings joy and happiness to everyone around her.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <div class="section-header">
+          <h2>Birthday Video Gallery</h2>
+          <p>Swipe through our favorite memories together</p>
+        </div>
+        <div class="video-grid">
+          <!-- Video items will be added here by JavaScript -->
+        </div>
+      </section>
+
+      <section id="wishes" class="wishes-section">
+        <div class="section-header">
+          <h2>Birthday Wishes</h2>
+          <p>Messages from friends and family</p>
+        </div>
+      
+          <div class="wish-card">
+            <div class="wish-header">
+              <div class="wish-avatar">JCG</div>
+              <div class="wish-author">Your Hubby</div>
+            </div>
+            <p class="wish-text">Hi Wifey ko happy birthday po and enjoy your day po. Wag na po sad ah dahil wala ako dyan sa araw ng birtday mo, but my presence is always here po. I am very thankful that you are my future wife, although wala pa tayo dun pero we have a promise to each other that we'll get married if we both ready na. I'm always here po love ko no mather what happens, also I will help you to you acads, as long as I can. Mamahalin kita habang-buhay love ko. I love you future Mrs. Trixie Gamayo. Happy birthday Wifey!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>Made with Love for Trixie's Birthday</p>
+        <p>© 2025</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="close-button" aria-label="Close modal">&times;</button>
+      <div class="video-container">
+        <video id="videoPlayer" controls>
+          <source src="/placeholder.svg" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="modal-info">
+        <h3 id="videoTitle" class="video-title"></h3>
+        <p id="videoDescription" class="video-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
